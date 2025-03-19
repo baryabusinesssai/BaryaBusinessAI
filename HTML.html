@@ -1,0 +1,227 @@
+hh<div class="mobile-app">
+  <header class="header">
+    <h1>Barya Business AI</h1>
+    <p>Revolutionizing Business with AI</p>
+    <button class="get-started">Get Started</button>
+  </header>
+  <section class="features">
+    <div class="feature">
+      <h2>BaryaBot AI</h2>
+      <p>Automate tasks and boost productivity.</p>
+    </div>
+    <div class="feature">
+      <h2>Networking</h2>
+      <p>AI-suggested business connections.</p>
+    </div>
+    <div class="feature">
+      <h2>Finance Tools</h2>
+      <p>Manage your money with ease.</p>
+    </div>
+  </section>
+</div>
+<div class="app">
+  <!-- Login Page -->
+  <section class="login-page" id="login">
+    <h1>Welcome to Barya Business AI</h1>
+    <input type="text" placeholder="Email" id="email">
+    <input type="password" placeholder="Password" id="password">
+    <button class="login-button" onclick="showDashboard()">Login</button>
+  </section>
+
+  <!-- Dashboard -->
+  <section class="dashboard hidden" id="dashboard">
+    <header>
+      <h2>Dashboard</h2>
+    </header>
+    <div class="features">
+      <button onclick="showChat()">💬 Chat</button>
+      <button onclick="showFeatureDetails()">📊 Insights</button>
+      <button onclick="showMarketplace()">🛍️ Marketplace</button>
+    </div>
+  </section>
+
+  <!-- Chat Interface -->
+  <section class="chat hidden" id="chat">
+    <header>
+      <h2>BaryaBot AI Chat</h2>
+      <button onclick="showDashboard()">⬅ Back</button>
+    </header>
+    <div class="chat-box">
+      <p class="bot-message">Hi! How can I assist you today?</p>
+      <input type="text" placeholder="Type a message..." id="user-message">
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </section>
+</div>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barya Business AI</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="navbar">
+    <h1>Barya Business AI</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="section">
+    <h2>Welcome to Barya Business AI</h2>
+    <p>Revolutionizing business with the power of AI.</p>
+    <button>Get Started</button>
+  </section>
+
+  <section id="features" class="section">
+    <h2>Our Features</h2>
+    <div class="feature">
+      <h3>BaryaBot AI</h3>
+      <p>Automate tasks and boost productivity.</p>
+    </div>
+    <div class="feature">
+      <h3>Networking</h3>
+      <p>AI-driven business connections.</p>
+    </div>
+    <div class="feature">
+      <h3>Finance Tools</h3>
+      <p>Effortless financial management.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <p>Email: support@baryabusinessai.com</p>
+    <p>Phone: +91-1234567890</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Barya Business AI. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
+<!-- Login Page -->
+<section id="login-page" class="page">
+  <h2>Login to Your Account</h2>
+  <input type="email" placeholder="Enter your email" id="login-email">
+  <input type="password" placeholder="Enter your password" id="login-password">
+  <button onclick="handleLogin()">Login</button>
+  <p>Don't have an account? <a href="#" onclick="showSignup()">Sign up</a></p>
+</section>
+
+<!-- Signup Page -->
+<section id="signup-page" class="page hidden">
+  <h2>Create Your Account</h2>
+  <input type="text" placeholder="Enter your name" id="signup-name">
+  <input type="email" placeholder="Enter your email" id="signup-email">
+  <input type="password" placeholder="Create a password" id="signup-password">
+  <button onclick="handleSignup()">Sign Up</button>
+  <p>Already have an account? <a href="#" onclick="showLogin()">Login</a></p>
+</section>
+
+<!-- AI Chatbot -->
+<section id="chatbot-page" class="page hidden">
+  <h2>BaryaBot AI Chat</h2>
+  <div id="chat-area">
+    <div id="bot-message" class="message">Hello! How can I assist you today?</div>
+  </div>
+  <input type="text" placeholder="Type your message..." id="user-message">
+  <button onclick="sendMessage()">Send</button>
+</section>
+<section id="navigation-page" class="page active">
+  <h2>Explore Our Features</h2>
+  <div class="feature-card" onclick="openSite('https://example.com/feature1')">
+    <h3>Feature 1: AI Bot</h3>
+    <p>Chat with our advanced AI assistant.</p>
+  </div>
+  <div class="feature-card" onclick="openSite('https://example.com/feature2')">
+    <h3>Feature 2: Analytics</h3>
+    <p>View powerful business insights.</p>
+  </div>
+  <div class="feature-card" onclick="openSite('https://example.com/feature3')">
+    <h3>Feature 3: Networking</h3>
+    <p>Build meaningful business connections.</p>
+  </div>
+</section>
+<div class="feature-card" onclick="openSite('https://example.com/feature1')">
+  <h3>Feature 1: AI Bot</h3>
+  <p>Chat with our advanced AI assistant.</p>
+</div>
+<a href="https://example.com/feature1" target="_blank" class="feature-card">
+  <h3>Feature 1: AI Bot</h3>
+  <p>Chat with our advanced AI assistant.</p>
+</a>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="script.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testing Website</title>
+</head>
+
+<body>
+  <h1>It Works!</h1>
+  <p>Your website is up and running.</p>
+</body>
+
+</html>
+<button id="clickMe">Click Me</button>
+<p id="message"></p>
+<button id="clickMe">Click Me</button>
+<p id="message"></p>
+<h2 id="typingText"></h2>
+<button id="clickMe">Click Me</button>
+<h2>Business AI Survey</h2>
+
+<form id="surveyForm">
+  <label>What type of business do you run?</label>
+  <select id="businessType">
+    <option value="Startup">Startup</option>
+    <option value="Freelancer">Freelancer</option>
+    <option value="E-commerce">E-commerce</option>
+    <option value="Other">Other</option>
+  </select>
+
+  <label>What is your biggest challenge?</label>
+  <select id="challenge">
+    <option value="Marketing">Marketing</option>
+    <option value="Funding">Funding</option>
+    <option value="Automation">Automation</option>
+    <option value="Growth">Growth</option>
+  </select>
+
+  <label>Do you use AI in your business?</label>
+  <select id="aiUsage">
+    <option value="Yes">Yes</option>
+    <option value="No">No</option>
+  </select>
+
+  <label>Your Email (To receive AI Insights)</label>
+  <input type="email" id="email" required>
+
+  <button type="button" onclick="submitSurvey()">Submit</button>
+</form>
+
+<p id="responseMessage"></p>
+<h2>Chat with BaryaBot AI</h2>
+<div id="chatbox">
+  <p><b>BaryaBot:</b> Hi! Ask me anything about business & AI.</p>
+</div>
+<input type="text" id="userInput" placeholder="Type your question..." />
+<button onclick="sendMessage()">Send</button>
